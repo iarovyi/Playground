@@ -10,6 +10,7 @@
     using BenchmarkDotNet.Reports;
     using BenchmarkDotNet.Running;
 
+	//Prove that Expression.Compile is slow https://gist.github.com/dadhi/272c72091af20572ede1
     public sealed class Program
     {
         static void Main(string[] args)
