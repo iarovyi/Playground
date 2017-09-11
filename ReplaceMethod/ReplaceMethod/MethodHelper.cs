@@ -9,6 +9,7 @@
     /// Based on:
     /// https://www.codeproject.com/Articles/37549/CLR-Injection-Runtime-Method-Replacer
     /// https://stackoverflow.com/questions/7299097/dynamically-replace-the-contents-of-a-c-sharp-method
+	/// https://www.codeproject.com/Articles/463508/NET-CLR-Injection-Modify-IL-Code-during-Run-time
     /// </summary>
     public static class MethodHelper
     {
