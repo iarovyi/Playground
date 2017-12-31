@@ -9,8 +9,9 @@ INSTALL
 
 GENERATE WEBSITE
 6) сгенерировать шаблон  
-    vue init simple <MY PROJECT NAME>
-	vue init webpack-simple <MY PROJECT NAME>
+    vue init simple <MY PROJECT NAME>          - без webpack
+	vue init webpack-simple <MY PROJECT NAME>  - простой с webpack
+	vue init webpack <MY PROJECT NAME>         - сложный с webpack
 7) сделать текущей папку проекта cd .\<MY PROJECT NAME>
 8) скачать зависомости для сгенерированого шаблона
    npm install
@@ -32,6 +33,5 @@ DEPLOY
 	11.2) в случае simple 
 	      ничего не надо делать, все файлы готовы
 -------------------------------------------------------------------
-
 
 
