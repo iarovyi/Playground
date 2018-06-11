@@ -1,0 +1,1 @@
+docker container run -d --name web1 -p 8080:8080 psweb
