@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  dotnetcoredockerwebapp:
+    image: dotnetcoredockerwebapp
+    build:
+      context: .
+      dockerfile: DotNetCoreDockerWebApp/Dockerfile
