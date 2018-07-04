@@ -1,6 +1,7 @@
 ﻿namespace VeryBasicAlgorithms
 {
     using System;
+    using VeryBasicAlgorithms.DataStructures;
     using VeryBasicAlgorithms.UnionFind;
 
     class Program
@@ -12,7 +13,8 @@
             //Find3NumbersWhoseSumEqualsZero.Main();
             //Stack.Main();
             //StackWithLinkedList.Main();
-            BinarySearch.Main();
+            //BinarySearch.Main();
+            //PriorityQueue<string>.Main();
             Console.WriteLine("Completed");
             Console.ReadKey();
         }
