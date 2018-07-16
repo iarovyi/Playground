@@ -15,6 +15,7 @@
             //StackWithLinkedList.Main();
             //BinarySearch.Main();
             //PriorityQueue<string>.Main();
+            Graph.Main();
             Console.WriteLine("Completed");
             Console.ReadKey();
         }
