@@ -1,8 +1,6 @@
 
-const Home = {
+var Home = {
     template: `<div>
-                   <app-header/>
                    <p>Home page</p>
-                   <app-footer/>
                </div>`
 }

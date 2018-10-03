@@ -1,8 +1,6 @@
 
-const About = {
+var About = {
     template: `<div>
-                   <app-header/>
                    <p>about page</p>
-                   <app-footer/>
                </div>`
 }

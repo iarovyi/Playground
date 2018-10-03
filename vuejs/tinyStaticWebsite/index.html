@@ -1,37 +1,40 @@
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
     <body>
-      <div id="app"></div>
+      <div id="app">
+          <div class="header">
+              <ul>
+                  <li><router-link to="/">Home</router-link></li>
+                  <li><router-link to="/about">About</router-link></li>
+                  <li><router-link to="/contacts">Contacts</router-link></li>
+              </ul>
+          </div>
+          <router-view></router-view>
+          <div class="footer">
+              <div>This is Footer</div>
+              <disclaimer></disclaimer>
+          </div>
+      </div>
+
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <script src="./components/footer.js"></script>
-      <script src="./components/header.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
+      <script src="components/disclaimer.js"></script>
       <script src="./pages/home.js"></script>
       <script src="./pages/about.js"></script>
       <script src="./pages/contacts.js"></script>
       <script>
-          const NotFound = { template: '<p>Page not found</p>' }
-          const routes = {
-              '/about': About,
-              '/contacts': Contacts,
-              '/index.html': Home,
-              '/': Home,
-          }
-          //based on https://vuejs.org/v2/guide/routing.html
           new Vue({
               el: '#app',
-              data: {
-                  currentRoute: window.location.pathname
-              },
-              computed: {
-                  findPage: function (){
-                      const foundRoute = Object.keys(routes)
-                          .filter(function (route) { return this.currentRoute.endsWith(route); }, this)[0];
-                      return routes[foundRoute] || NotFound;
-                  }
-              },
-              render: function (h) { return h(this.findPage) }
-          })
-          </script>
+              router: new VueRouter({
+                  routes: [
+                      { path: '/about', component: About },
+                      { path: '/contacts', component: Contacts },
+                      { path: '/', component: Home }
+                  ]
+              })
+          });
+      </script>
     </body>
 </html>
