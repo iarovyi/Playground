@@ -9,6 +9,7 @@
                   <li><router-link to="/">Home</router-link></li>
                   <li><router-link to="/about">About</router-link></li>
                   <li><router-link to="/contacts">Contacts</router-link></li>
+                  <li><router-link to="/signup">Sign up</router-link></li>
               </ul>
           </div>
           <router-view></router-view>
@@ -20,20 +21,24 @@
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
       <script src="components/disclaimer.js"></script>
       <script src="./pages/home.js"></script>
       <script src="./pages/about.js"></script>
       <script src="./pages/contacts.js"></script>
+      <script src="./pages/signup.js"></script>
       <script>
+          var router = new VueRouter({
+              routes: [
+                  { path: '/about', component: About },
+                  { path: '/contacts', component: Contacts },
+                  { path: '/signup', component: SignUp },
+                  { path: '/', component: Home }
+              ]
+          });
           new Vue({
               el: '#app',
-              router: new VueRouter({
-                  routes: [
-                      { path: '/about', component: About },
-                      { path: '/contacts', component: Contacts },
-                      { path: '/', component: Home }
-                  ]
-              })
+              router: router
           });
       </script>
     </body>
