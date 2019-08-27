@@ -7,7 +7,7 @@
     {
         static void Main(string[] args)
         {
-            GetPrimeNumbers.Test();
+            Converter.Test();
 
 
             Console.WriteLine("Hello World!");
