@@ -7,7 +7,7 @@
     {
         static void Main(string[] args)
         {
-            Converter.Test();
+            ReverseInteger.Test();
 
 
             Console.WriteLine("Hello World!");

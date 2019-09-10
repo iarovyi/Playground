@@ -9,7 +9,7 @@
     {
         public static void Test()
         {
-             string binary357 = ToNumberSystemOf(2, 357);
+            string binary357 = ToNumberSystemOf(2, 357);
              string triple357 = ToNumberSystemOf(3, 357);
 
             /*int decimal6 = FromBinary("110");
