@@ -7,7 +7,7 @@
     {
         static void Main(string[] args)
         {
-            ReverseInteger.Test();
+            SortedPermutationRank.Test();
 
 
             Console.WriteLine("Hello World!");
