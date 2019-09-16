@@ -7,7 +7,7 @@
     {
         static void Main(string[] args)
         {
-            SortedPermutationRank.Test();
+            LargestCoprimeDivisor.Test();
 
 
             Console.WriteLine("Hello World!");
