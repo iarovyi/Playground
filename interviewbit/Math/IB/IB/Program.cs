@@ -2,12 +2,13 @@
 {
     using System;
     using Math;
+    using Arrays.ArrayMath;
 
     class Program
     {
         static void Main(string[] args)
         {
-            LargestCoprimeDivisor.Test();
+            AddOneToNumber.Test();
 
 
             Console.WriteLine("Hello World!");
