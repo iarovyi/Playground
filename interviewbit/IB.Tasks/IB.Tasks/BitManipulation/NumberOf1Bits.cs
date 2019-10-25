@@ -15,6 +15,10 @@
         public void Test()
         {
             long number = 0b00000000000000000000000000001011;
+
+            //BitHelper.CountSetBits(0b00000000000000000000000000001011).Should().Be(3);
+            //BitHelper.UnsetLastSetBit(0b00000000000000000000000000001011).Should().Be(0b00000000000000000000000000001010);
+
             GetNumSetBits(number).Should().Be(3);
         }
 
