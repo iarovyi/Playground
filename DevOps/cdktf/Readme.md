@@ -20,7 +20,7 @@ saml2aws login --role=arn:aws:iam::$($account):role/saml/$($role) --profile defa
 cdktf init --template=csharp --local
 ```
 
-2. Modify aws provider to `cdktf.json` with
+2. Add aws provider to `cdktf.json` with
 ```json
 "terraformProviders": [ "aws@~> 3.45" ]
 ```
