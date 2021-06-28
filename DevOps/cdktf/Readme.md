@@ -20,7 +20,7 @@ saml2aws login --role=arn:aws:iam::$($account):role/saml/$($role) --profile defa
 cdktf init --template=csharp --local
 ```
 
-2. Modify add aws provider to `cdktf.json` with
+2. Modify aws provider to `cdktf.json` with
 ```json
 "terraformProviders": [ "aws@~> 3.45" ]
 ```
@@ -34,3 +34,5 @@ cdktf diff cdktf                   # build a plan of changes
 cdktf deploy cdktf --auto-approve  # deploy
 cdktf destroy cdktf --auto-approve # destroy
 ```
+
+4. Experiment in [Main.cs](Main.cs)
