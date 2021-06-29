@@ -1,0 +1,5 @@
+config:
+  PulumiDev4:dbPassword:
+    secure: AAABAAQ56UYOeaPWtGTW1inVipLJXVwFVOkCdHGsqzhFnuXHVw==
+  PulumiDev4:name: yo
+  aws:region: eu-west-1
