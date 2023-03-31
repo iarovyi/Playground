@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AACI,UACI,W","sources":["webpack://mypage/./src/styles.scss"],"sourcesContent":["body {\n    span {\n        color: blue;\n    }\n}\r\n"],"names":[],"sourceRoot":""}
