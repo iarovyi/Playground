@@ -40,6 +40,10 @@ module.exports = {
     ],
     mode: "production",
     devtool: "source-map",
+    performance: {
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
     module: {
         rules: [
             {
@@ -66,7 +70,7 @@ mkdir src
 "@ | out-file -encoding ascii ./src/index.html
 
 @"
-import styles from "./styles.scss"
+import './styles.scss'
 console.log('Hello');
 "@ | out-file -encoding ascii ./src/index.js
 
@@ -88,4 +92,23 @@ node_modules
 ```javascript
 npm run start
 npm run build
+```
+
+# Bootstrap
+
+1. Install bootstrap
+```
+npm install bootstrap
+```
+
+2. Import library
+```
+import '../node_modules/bootstrap/scss/bootstrap.scss'
+import '../node_modules/bootstrap/js/src/tab.js'
+import '../node_modules/bootstrap/js/src/dropdown.js'
+```
+or import minimized version
+```
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
 ```
